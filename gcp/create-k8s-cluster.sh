@@ -6,3 +6,5 @@ kops create cluster \
 	--node-count=${node_count} \
 	--zones ${zones} \
 	--project=${PROJECT}
+
+kops update cluster --yes

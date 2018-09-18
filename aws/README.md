@@ -1,5 +1,9 @@
 ## AWS KOPS
 
+# Copy and update 
+cp kops.env-example kops.env
+vim kops.env
+
 # AWS cli gather regions and zones
 for region in $(aws ec2 describe-regions|jq -r '.Regions[]|.RegionName');
 do
